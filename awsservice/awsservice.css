@@ -127,7 +127,7 @@ margin-top: 50px;
 /*send email*/
 
 .open-button {
-z-index: 100;
+z-index: 200;
 margin-top: 100px;
 background-color: #8d67cf;
 color: rgb(0, 0, 0);
@@ -138,7 +138,6 @@ border: none;
 cursor: pointer;
 opacity: 0.8;
 position: fixed;
-
 padding: 3px 2px;
 right: 20px;
 width: 30px;
@@ -249,8 +248,8 @@ margin-top: -35px;
  /*footer*/
 footer{
 z-index: -10;
+background: hwb(186 24% 72%);
 position: absolute;
-
 width: 100%;
 left: 0;
 }
@@ -385,7 +384,7 @@ margin-right: 10px;
 @media (min-width: 1024px) {
 footer{
   margin-top: 250%;
-  background: hwb(186 24% 72%);
+  
 }
 footer .content .link-boxes{
   flex-wrap: wrap;
@@ -429,7 +428,7 @@ footer .content .link-boxes .input-box{
 footer{
   position: absolute;
   margin-top: 3000%;
-  background: hwb(187 42% 22%);
+ 
 }
 footer::before{
   top: 245px;
