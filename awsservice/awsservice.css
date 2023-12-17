@@ -138,14 +138,23 @@ border: none;
 cursor: pointer;
 opacity: 0.8;
 position: fixed;
-top:495px;
+
 padding: 3px 2px;
 right: 20px;
 width: 30px;
 height: 30px;
 border-radius: 50%;
 }
-
+@media (min-width: 1023px){
+  .open-button {
+    top:495px;
+  }
+}
+@media (max-width: 767px) {
+  .open-button {
+    top:495px;
+  }
+}
 .container{
 z-index: 400;
 position: fixed;
@@ -419,7 +428,7 @@ footer .content .link-boxes .input-box{
 @media (max-width: 767px){
 footer{
   position: absolute;
-  margin-top: 1800%;
+  margin-top: 2000%;
  
 }
 footer::before{
@@ -736,22 +745,23 @@ margin-left:100px;
 }
 @media (max-width: 767px) {
 .trees1{
-   
+  border: 1px solid black;
+   position: absolute;
    width: 300px;
    margin-top: 250px;
    margin-left: 30px;
   
  }
-
  .trees2{
-
+position: absolute;
    width: 300px;
-   margin-top: 620%;
+   margin-top: 750%;
    margin-left: 30px;
  }
  .trees3{
+  position: absolute;
    width: 300px;
-   margin-top: 1200%;
+   margin-top: 1400%;
    margin-left:30px;
  }
 }
