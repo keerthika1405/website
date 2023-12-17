@@ -428,7 +428,7 @@ footer .content .link-boxes .input-box{
 @media (max-width: 767px){
 footer{
   position: absolute;
-  margin-top: 2500%;
+  margin-top: 3000%;
  
 }
 footer::before{
