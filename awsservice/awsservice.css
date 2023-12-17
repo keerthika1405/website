@@ -250,7 +250,7 @@ margin-top: -35px;
 footer{
 z-index: -10;
 position: absolute;
-background: hwb(186 24% 72%);
+
 width: 100%;
 left: 0;
 }
@@ -382,10 +382,10 @@ margin-right: 10px;
 
 
 
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
 footer{
   margin-top: 250%;
- 
+  background: hwb(186 24% 72%);
 }
 footer .content .link-boxes{
   flex-wrap: wrap;
@@ -399,7 +399,7 @@ footer .content .link-boxes .input-box{
 
 @media (max-width: 1023px){
 footer{
-  
+
   position: absolute;
   margin-top: 900%;
  
@@ -429,7 +429,7 @@ footer .content .link-boxes .input-box{
 footer{
   position: absolute;
   margin-top: 3000%;
- 
+  background: hwb(186 24% 72%);
 }
 footer::before{
   top: 245px;
