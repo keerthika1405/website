@@ -150,14 +150,14 @@ label{font-weight:normal}
   .webname{
   z-index:100;
     font-size: 15px;
-    color: rgb(123, 42, 108);
+    color: rgb(255, 254, 255);
   }
 
   @media (min-width: 1024px) {
     .webname{
-      /* border: 1px solid black; */
+      position: fixed;
       width: 130px;
-      margin-top: -40px;
+      margin-top: 0px;
       margin-left: 1200px;
     }
   }
@@ -1151,9 +1151,11 @@ body {
 }
 @media (min-width: 1024px) {
   .darkLight-searchBox .dark-light{
-  
-  margin-left: 1100px;
-  margin-top: -25px;
+  position: fixed;
+  margin-left: 1120px;
+  margin-top: 13px;
+  width: 50px;
+z-index: 100;
   }
 }
 @media (min-width:768px )and (max-width: 1023px) {
@@ -1437,12 +1439,19 @@ width: 100%;
   
     width: 450px;
     margin-top:10px;
-    /* margin-left: 450px; */
+    margin-left: 10px;
   }
   .search-box  button{
   left: 380px;
   }
-
+  .outer_searchbox{
+    position: fixed;
+    margin-left: 450px;
+width: 460px;
+height: 50px;
+padding: 5px 5px;
+z-index: 100;
+   }
 } 
 
 @media (max-width: 1023px) {
@@ -1461,15 +1470,7 @@ width: 100%;
     
   }
   
-  .outer_searchbox{
-  
-    position: fixed;
-    margin-left: 450px;
-width: 460px;
-height: 50px;
-padding: 5px 5px;
-z-index: 100;
-   }
+
 }
 
 @media (max-width: 767px) {
