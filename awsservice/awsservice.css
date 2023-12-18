@@ -286,6 +286,7 @@ margin-top: 150px;
 
 
 .container .btn {
+  border: 1px solid yellow;
 margin-left: 70px;
 margin-top: -35px;
 } 
