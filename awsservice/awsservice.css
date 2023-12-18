@@ -151,7 +151,7 @@ border-radius: 50%;
 }
 @media (max-width: 767px) {
   .open-button {
-    top:495px;
+    top:510px;
   }
 }
 .container{
@@ -639,7 +639,7 @@ padding: 0px 5px ;
   display:flex;
   padding: 2px;
   gap: 16px;
-  width: 50px;
+  width:100px;
 
   }
   
