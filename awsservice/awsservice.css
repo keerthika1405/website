@@ -511,7 +511,7 @@ padding: 0px 10px ;
   /* background-color: green;//group of inside list  ofgold*/
   }
   .list-items-with-description li {
-  /* background-color: green; */
+  background-color: green;
   /* //group of inside list  ofgold*/ 
   display:flex;
   padding: 2px;
@@ -531,6 +531,43 @@ padding: 0px 10px ;
     white-space: nowrap;
     color: black;
     }
+    .navigation li button {
+      /* background-color: rgb(5, 214, 193); */
+    /* color: #e90000; */
+    color: rgb(255, 255, 255); 
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    margin-right: -4px;
+    align-items: center;
+    min-height: 36px;
+    font-size: 14px;
+    gap: 4px;
+    font-family: 'Open Sans', sans-serif;
+    flex-wrap: nowrap;
+    border-radius: 999px;
+    padding: 4px 10px;
+    white-space: nowrap;
+    background: none;
+    display: flex;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    /* feature specific button */
+    }
+    .navigation li button svg {
+    margin-top: 2px;
+    fill: rgb(255, 248, 248);
+    /* fill: pink; */
+    transition: all 0.2s ease-in-out;
+    /* dropdown button of feature */
+    }
+    
+    .navigation li:hover button svg {
+    fill: white;
+    rotate: 180deg;
+    }
 }
 
 /* @media (max-width: 1023px) {
@@ -542,27 +579,35 @@ padding: 0px 10px ;
 @media (max-width: 767px) {
 
 .menu__wrapper {
-  padding: 0px 6px;
-border:1px solid black; 
-
-top: 200px;
-width: 150px;
-height:300px;
+top: 190px;
+border: none;
+width: 120px;
+height:280px;
+left: 10px;
 background-color: #8d67cf;
 }
+.naviul {
+
+  position: absolute;
+  margin-top: 230px;
+}
 .navi .navigation li {
-top: 100px;
+
 display:block;
 position: relative;
 cursor: pointer;
 /* margin-top: 20px; */
 padding: 0px 5px ;
 }
+
+
 .dropdown__wrapper {
   position: absolute;
-  top: -10px;
-  left: 160px;
+  top: -20px;
+   left: 110px; 
   padding-top: 0px;
+
+  
   }
   .dropdown {
     border-radius: 8px;
@@ -570,8 +615,8 @@ padding: 0px 5px ;
     /* background-color: gold; */
     display: none;
     padding: 8px;
-    width: 100%;
-    max-width: 600px;
+    width: 220px;
+    max-width: 800px;
     border: 1px solid black;
     box-shadow: 0 50px 100px -20px rgba(0, 0, 0, .12),  0 30px 60px -30px rgba(0, 0, 0, .15);
     z-index: 2;
@@ -580,27 +625,27 @@ padding: 0px 5px ;
     }
     
 .list-items-with-description {
+
   list-style-type: none;
   display: grid;
   width: 100%;
-  top: 0px;
   grid-template-columns: 1fr 1fr;
-  background-color: #a92222;
-  /* background-color: green;//group of inside list  ofgold*/
-  }
-  .list-items-with-description li {
-  /* background-color: rgb(182, 244, 182); */
+ 
+}
+
+.list-items-with-description li {
+
   /* //group of inside list  ofgold*/ 
   display:flex;
   padding: 2px;
   gap: 16px;
-  width: fit-content;
+  width: 50px;
 
-  
   }
+  
   .item-title h3 {
-    font-weight: 500;
-    font-size: 8px;
+    font-weight: bolder;
+    font-size: 9px;
     color: rgb(13, 13, 13);
     
     }
@@ -608,6 +653,43 @@ padding: 0px 5px ;
     .item-title p {
       display: none;
  
+    }
+
+    .navigation li button {
+      /* background-color: rgb(5, 214, 193); */
+    /* color: #e90000; */
+    color: rgb(255, 255, 255); 
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+   
+    align-items: center;
+    min-height: 36px;
+    font-size: 10px;
+    gap: 4px;
+    font-family: 'Open Sans', sans-serif;
+    flex-wrap: nowrap;
+    border-radius: 999px;
+    padding: 4px 4px;
+    white-space: nowrap;
+    background: none;
+
+    transition: all 0.2s ease-in-out;
+    /* feature specific button */
+    }
+    .navigation li button svg {
+    margin-top: 2px;
+    fill: rgb(255, 248, 248);
+    /* fill: pink; */
+    transition: all 0.2s ease-in-out;
+    /* dropdown button of feature */
+    }
+    
+    .navigation li:hover button svg {
+    fill: white;
+    rotate: 180deg;
     }
 }
 
@@ -645,43 +727,7 @@ color:#8d67cf;
 /* background list hover */
 }
 
-.navigation li button {
-  /* background-color: rgb(5, 214, 193); */
-/* color: #e90000; */
-color: rgb(255, 255, 255); 
-transition: all 0.3s ease;
-text-decoration: none;
-border: none;
-cursor: pointer;
-z-index: 1;
-margin-right: -4px;
-align-items: center;
-min-height: 36px;
-font-size: 14px;
-gap: 4px;
-font-family: 'Open Sans', sans-serif;
-flex-wrap: nowrap;
-border-radius: 999px;
-padding: 4px 10px;
-white-space: nowrap;
-background: none;
-display: flex;
-position: relative;
-transition: all 0.2s ease-in-out;
-/* feature specific button */
-}
-.navigation li button svg {
-margin-top: 2px;
-fill: rgb(255, 248, 248);
-/* fill: pink; */
-transition: all 0.2s ease-in-out;
-/* dropdown button of feature */
-}
 
-.navigation li:hover button svg {
-fill: white;
-rotate: 180deg;
-}
 .navigation li:hover button {
 color: rgb(0, 0, 0);
 background-color: rgb(195, 190, 190);
