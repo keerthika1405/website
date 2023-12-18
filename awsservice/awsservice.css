@@ -1172,7 +1172,7 @@ padding: 2px 2px;
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: #8d67cf; /* Set a background color */
+    background-color: #f1ed0b; /* Set a background color */
     color: rgb(0, 0, 0); /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
   width: 30px;/* Some padding */
