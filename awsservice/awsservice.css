@@ -1167,8 +1167,8 @@ padding: 2px 2px;
   #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 50px; /* Place the button at the bottom of the page */
-    right: 25px; 
+     /* Place the button at the bottom of the page */
+    right: 20px; 
   /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
