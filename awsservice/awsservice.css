@@ -45,7 +45,6 @@ margin-left: 850px;
 
 @media (max-width: 767px) {
 .webname{
-  border: 1px solid red;
 position: fixed;
 width: 80px;
 margin-top: 80px;
