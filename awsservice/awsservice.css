@@ -1166,11 +1166,11 @@ padding: 2px 2px;
 
 @media (max-width: 767px) {
   #myBtn {
-    bottom:20px;
+    bottom:60px;
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     /* Place the button at the bottom of the page */
-    right: 25px; 
+    right: 20px; 
   /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
