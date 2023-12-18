@@ -11,6 +11,107 @@
   <link rel="stylesheet" href="awsservice.css">
   <link rel="stylesheet" href="treestructure.css">
   
+  <style>
+    #recommend {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: none; 
+        z-index: 100;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    }
+    .recompopup {
+        position: relative;
+        background-color: #ffffff;
+        border: 1px solid black;
+        width: 1000px;
+        height: 520px;
+        padding: 20px;
+        z-index: 101; /* Ensure popup appears above the overlay */
+        border-radius:2%;
+        margin-top: 50px;
+        margin-left: 170px;
+    }
+.recompopup h2{
+width: fit-content;
+margin-left: 300px;
+
+}
+.recompopup h1{
+width: fit-content;
+margin-left: 330px;
+
+}
+/* .popup ul{
+border: 1px solid black;
+} */
+.recompopup ul li{
+border-radius: 2%;
+padding: 0px 10px;
+display:inline-block;
+list-style: none;
+
+}
+.recompopup ul a{
+text-decoration: none;
+color: black;
+}
+
+.course1, 
+.course2,
+.course3{
+width: 280px;
+height: 300px;
+border: 1px solid black;
+border-radius: 4%;
+}
+.course1 h2, 
+.course2 h2,
+.course3 h2{
+color:#8d67cf;
+margin-left: 10px;
+
+}
+.course1 p, 
+.course2 p,
+.course3 p{
+font-size: 15.5px;
+
+}
+
+.recompopup ul li img{
+border-radius: 4%;
+width: 280px;
+height: 180px;
+}
+.recompopup button{
+margin-left: 450px;
+border-radius: 15%;
+border-color: #8d67cf;
+padding: 10px 20px;
+color: #8d67cf;
+font-weight: bolder;
+cursor: pointer;
+}
+.recompopup button:hover,
+.recompopup svg:hover{
+box-shadow: 0 4px 8px rgba(35, 34, 35, 0.1);;
+}
+
+    .close {
+        font-size: 50px;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px; /* Adjusted position for the close button */
+        color: rgb(0, 0, 0); /* Set the close button color to white */
+        z-index: 102; /* Ensure close button appears above the popup */
+    }
+</style>
+ 
+ 
     
 <style>
 
@@ -3033,7 +3134,67 @@ width:750px;
 
 
    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class='bx bx-up-arrow-alt bx-sm' style='color:#ffffff'  ></i></button>
-            <footer>
+          
+   <div id="recommend">
+    <div class="recompopup">
+        <h2>We've  a lot more for you to learn from </h2>
+        <h1><span style="color: #8d67cf;">Free Courses </span> by Keesite</h1>
+    <ul>
+ 
+        <li>
+        <a href="recommendation.html">
+        <div class="course1">
+            <img src="1.png" alt="">
+            <h2>Cloud Computing</h2>
+            <p>  Embrace the transformative power of cloud computing, Leverage its potential to optimize...</p>
+        </div></a>
+        <svg viewBox="0 0 200 200" width="25"  height="25" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" fill="#8d67cf" r="78" stroke="black" stroke-width="3"/>
+            <g class="eyes">
+              <circle cx="61" cy="82" r="12"/>
+              <circle cx="127" cy="82" r="12"/> </g>
+            <path d="m136.81 116.53c.69 26.17-64.11 42-81.52-.73" style="fill:none; stroke: black; stroke-width: 3;"/>
+          </svg>
+    </li>
+    <li>
+        <a href="recommendation.html">
+        <div class="course2">
+            <img src="2.png" alt="">
+            <h2>Networking</h2>
+            <p> Explore the vast realm of networking to seamlessly connect and share information...</p>
+
+        </div></a>
+        <svg viewBox="0 0 200 200" width="25"  height="25" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" fill="#8d67cf" r="78" stroke="black" stroke-width="3"/>
+            <g class="eyes">
+              <circle cx="61" cy="82" r="12"/>
+              <circle cx="127" cy="82" r="12"/> </g>
+            <path d="m136.81 116.53c.69 26.17-64.11 42-81.52-.73" style="fill:none; stroke: black; stroke-width: 3;"/>
+          </svg>
+    </li>
+    <li>
+        <div class="course3">
+            <img src="3.png" alt="">
+         
+            <h2>SQL</h2>
+            <p>Unlock the potential of SQL for streamlined data management and retrieval, enabling...</p>
+        </div>
+        <svg viewBox="0 0 200 200" width="25"  height="25" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" fill="#8d67cf" r="78" stroke="black" stroke-width="3"/>
+            <g class="eyes">
+              <circle cx="61" cy="82" r="12"/>
+              <circle cx="127" cy="82" r="12"/> </g>
+            <path d="m136.81 116.53c.69 26.17-64.11 42-81.52-.73" style="fill:none; stroke: black; stroke-width: 3;"/>
+          </svg>
+    </li>  
+    </ul>
+      <button onclick="" >view all</button>
+        <span class="close" onclick="closePopup()">&times;</span>
+    </div>
+</div>
+
+
+   <footer>
                 <div class="content">
                   <div class="top">
                     <div class="logo-details">
@@ -3414,8 +3575,16 @@ document.getElementById("wrapper").style.display = "none";
   });
   
 </script>
+<script>
+  var delay = 30000;
+  setTimeout(function() {
+      document.getElementById('recommend').style.display = 'block';
+  }, delay);
 
-
+  function closePopup() {
+      document.getElementById('recommend').style.display = 'none';
+  }
+</script>
 <!-- <script>
       
   document.addEventListener("scroll", function () {
