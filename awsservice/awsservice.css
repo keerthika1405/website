@@ -458,7 +458,7 @@ justify-content: space-between;
 z-index: 2;
 gap: 15px;
 /* background-color: rgb(79, 110, 122); */
-padding: 0px 16px;
+
 align-items: center;
 /* box-shadow: 0 1px 0 0 rgba(0, 0, 0, .1); */
 }
@@ -468,6 +468,7 @@ align-items: center;
 top: 60px;
 width: 800px;
 height:50px;
+padding: 0px 16px;
 /* background-color: blue; */
 }
 .navi .navigation li {
@@ -480,6 +481,56 @@ align-items: center;
 min-height: 36px;
 padding: 0px 10px ;
 }
+.dropdown__wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding-top: 60px;
+  }
+  .dropdown {
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  /* background-color: gold; */
+  display: none;
+  padding: 8px;
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid black;
+  box-shadow: 0 50px 100px -20px rgba(0, 0, 0, .12),  0 30px 60px -30px rgba(0, 0, 0, .15);
+  z-index: 2;
+  animation: fadeIn 0.2s ease-in-out;
+  
+  }
+  
+.list-items-with-description {
+  list-style-type: none;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  background-color: #f54500;
+  /* background-color: green;//group of inside list  ofgold*/
+  }
+  .list-items-with-description li {
+  /* background-color: green; */
+  /* //group of inside list  ofgold*/ 
+  display:flex;
+  padding: 2px;
+  gap: 16px;
+  width: fit-content;
+  
+  }
+  .item-title h3 {
+    font-weight: 500;
+    font-size: 14px;
+    color: black;
+    
+    }
+    
+    .item-title p {
+    font-size: 12px;
+    white-space: nowrap;
+    color: black;
+    }
 }
 
 /* @media (max-width: 1023px) {
@@ -491,21 +542,73 @@ padding: 0px 10px ;
 @media (max-width: 767px) {
 
 .menu__wrapper {
+  padding: 0px 6px;
 border:1px solid black; 
-margin-left: 180px;
-top: 250px;
-width: 200px;
+
+top: 200px;
+width: 150px;
 height:300px;
-background-color: blue;
+background-color: #8d67cf;
 }
 .navi .navigation li {
 top: 100px;
-display: block;
+display:block;
 position: relative;
 cursor: pointer;
 /* margin-top: 20px; */
 padding: 0px 5px ;
 }
+.dropdown__wrapper {
+  position: absolute;
+  top: -10px;
+  left: 160px;
+  padding-top: 0px;
+  }
+  .dropdown {
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    /* background-color: gold; */
+    display: none;
+    padding: 8px;
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid black;
+    box-shadow: 0 50px 100px -20px rgba(0, 0, 0, .12),  0 30px 60px -30px rgba(0, 0, 0, .15);
+    z-index: 2;
+    animation: fadeIn 0.2s ease-in-out;
+    
+    }
+    
+.list-items-with-description {
+  list-style-type: none;
+  display: grid;
+  width: 100%;
+  top: 0px;
+  grid-template-columns: 1fr 1fr;
+  background-color: #a92222;
+  /* background-color: green;//group of inside list  ofgold*/
+  }
+  .list-items-with-description li {
+  /* background-color: rgb(182, 244, 182); */
+  /* //group of inside list  ofgold*/ 
+  display:flex;
+  padding: 2px;
+  gap: 16px;
+  width: fit-content;
+
+  
+  }
+  .item-title h3 {
+    font-weight: 500;
+    font-size: 8px;
+    color: rgb(13, 13, 13);
+    
+    }
+    
+    .item-title p {
+      display: none;
+ 
+    }
 }
 
 
@@ -531,8 +634,7 @@ height: 50px;
 }
 
 .navi .navigation li a {
-
-color: white;
+color: rgb(186, 17, 17);
 font-size: 14px;
 text-decoration: none;
 }
@@ -542,10 +644,11 @@ color:#8d67cf;
 
 /* background list hover */
 }
-.navigation li button {
 
+.navigation li button {
+  /* background-color: rgb(5, 214, 193); */
 /* color: #e90000; */
-color: white; 
+color: rgb(255, 255, 255); 
 transition: all 0.3s ease;
 text-decoration: none;
 border: none;
@@ -603,43 +706,7 @@ transform: scale(1) translateY(0);
 }
 
 
-.dropdown__wrapper {
-position: absolute;
-top: 0px;
-left: 0px;
-padding-top: 60px;
-}
-.dropdown {
-border-radius: 8px;
-background-color: white;
-/* background-color: gold; */
-display: none;
-padding: 8px;
-width: 100%;
-max-width: 600px;
-border: 1px solid black;
-box-shadow: 0 50px 100px -20px rgba(0, 0, 0, .12),  0 30px 60px -30px rgba(0, 0, 0, .15);
-z-index: 2;
-animation: fadeIn 0.2s ease-in-out;
 
-}
-.list-items-with-description {
-list-style-type: none;
-display: grid;
-width: 100%;
-grid-template-columns: 1fr 1fr;
-/* background-color: #f54500; */
-/* background-color: green;//group of inside list  ofgold*/
-}
-.list-items-with-description li {
-/* background-color: green; */
-/* //group of inside list  ofgold*/ 
-display:flex;
-padding: 2px;
-gap: 16px;
-width: fit-content;
-
-}
 .list-items-with-description li:hover {
 background-color: #8d67cf;
 border-radius: 6px;
@@ -655,18 +722,7 @@ height: 24px;
 /* stroke: lightblue;//icon color */
 }
 
-.item-title h3 {
-font-weight: 500;
-font-size: 14px;
-color: black;
 
-}
-
-.item-title p {
-font-size: 12px;
-white-space: nowrap;
-color: black;
-}
 
 
 .mainpage{
@@ -744,7 +800,6 @@ margin-left:100px;
 }
 @media (max-width: 767px) {
 .trees1{
-  border: 1px solid black;
    position: absolute;
    width: 300px;
    margin-top: 250px;
