@@ -1132,16 +1132,17 @@ background: #fff;
 
  
 /*bottom to top*/
+@media (min-width: 1024px) {
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 50px; /* Place the button at the bottom of the page */
-  right: 5px; 
+  right: 20px; 
 /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: rgb(243, 11, 80); /* Set a background color */
+  background-color:#8d67cf; /* Set a background color */
   color: rgb(0, 0, 0); /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
 width: 30px;/* Some padding */
@@ -1152,5 +1153,36 @@ padding: 2px 2px;
 }
 
 #myBtn:hover {
+  
   background-color: rgb(14, 223, 150); /* Add a dark-grey background on hover */
+}
+}
+
+
+
+
+@media (max-width: 767px) {
+  #myBtn {
+    border: 1px solid black;
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 50px; /* Place the button at the bottom of the page */
+    right: 5px; 
+  /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #8d67cf; /* Set a background color */
+    color: rgb(0, 0, 0); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+  width: 30px;/* Some padding */
+  height: 30px;
+  padding: 2px 2px;
+    border-radius: 50%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(14, 223, 150); /* Add a dark-grey background on hover */
+  }
 }
