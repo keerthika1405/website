@@ -147,13 +147,13 @@ border-radius: 50%;
 @media (min-width: 1023px){
   .open-button {
     top:495px;
-    bottom: 10px;
+  
   }
 }
 @media (max-width: 767px) {
   .open-button {
     top:600px;
-    bottom:10px;
+   
   }
 }
 .container{
