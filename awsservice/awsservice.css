@@ -626,7 +626,7 @@ padding: 0px 10px ;
 @media (max-width: 767px) {
 
 .menu__wrapper {
-top: 220px;
+top: 240px;
 border: none;
 width: 120px;
 height:280px;
@@ -634,7 +634,7 @@ left: 10px;
 background-color: #8d67cf;
 }
 .naviul {
-
+border: 1px solid black;
   position: absolute;
   margin-top: 240px;
 }
