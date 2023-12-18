@@ -209,7 +209,6 @@ margin-top: 150px;
 
 @media (max-width: 767px) {
 .container{
-border: 1px solid black;
 margin-left: 60px;
 width: 300px;
 height:340px;
@@ -537,11 +536,11 @@ padding: 0px 10px ;
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr;
-  background-color: #f54500;
+  /* background-color: #f54500; */
   /* background-color: green;//group of inside list  ofgold*/
   }
   .list-items-with-description li {
-  background-color: green;
+  /* background-color: green; */
   /* //group of inside list  ofgold*/ 
   display:flex;
   padding: 2px;
@@ -609,7 +608,7 @@ padding: 0px 10px ;
 @media (max-width: 767px) {
 
 .menu__wrapper {
-top: 190px;
+top: 170px;
 border: none;
 width: 120px;
 height:280px;
