@@ -636,7 +636,7 @@ background-color: #8d67cf;
 .naviul {
 
   position: absolute;
-  margin-top: 230px;
+  margin-top: 240px;
 }
 .navi .navigation li {
 
@@ -650,7 +650,7 @@ padding: 0px 5px ;
 
 .dropdown__wrapper {
   position: absolute;
-  top: -10px;
+  top: 10px;
    left: 110px; 
   padding-top: 0px;
 
