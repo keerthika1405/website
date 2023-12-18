@@ -626,7 +626,7 @@ padding: 0px 10px ;
 @media (max-width: 767px) {
 
 .menu__wrapper {
-top: 200px;
+top: 220px;
 border: none;
 width: 120px;
 height:280px;
@@ -650,7 +650,7 @@ padding: 0px 5px ;
 
 .dropdown__wrapper {
   position: absolute;
-  top: -20px;
+  top: -10px;
    left: 110px; 
   padding-top: 0px;
 
