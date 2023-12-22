@@ -501,7 +501,7 @@ footer .content .link-boxes .input-box{
 
 /*course location subheader*/
 .menu__wrapper {
-border: 1px solid black;
+/* border: 1px solid black; */
 display: none;
 position: fixed;
 justify-content: space-between;
@@ -817,9 +817,6 @@ width: 24px;
 height: 24px;
 /* stroke: lightblue;//icon color */
 }
-
-
-
 
 .mainpage{
 width: 950px;
